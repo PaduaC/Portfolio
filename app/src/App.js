@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Header from "./components/header";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const useStyles = makeStyles({
   root: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles({
     backgroundSize: "cover",
     backgroundPosition: "center",
     color: "white",
+    fontFamily: "Josefin Sans, sans-serif",
   },
 });
 
@@ -24,6 +26,7 @@ export default function App() {
       <div className={classes.root}>
         <CssBaseline />
         <Header />
+        <Body />
       </div>
     </>
   );
